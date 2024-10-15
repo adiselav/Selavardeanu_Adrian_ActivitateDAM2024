@@ -22,7 +22,7 @@
         <EditText
             android:id="@+id/EditNume"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:hint="Introduceti numele" />
 
     </LinearLayout>
@@ -42,7 +42,7 @@
             android:id="@+id/EditGrupa"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:hint="Introduceti numele" />
 
     </LinearLayout>

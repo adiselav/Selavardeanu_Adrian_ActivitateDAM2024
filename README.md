@@ -1,1 +1,4 @@
-# DAMseminar1099
+# Selavardeanu_Adrian_ActivitateDAM2024
+
+
+
