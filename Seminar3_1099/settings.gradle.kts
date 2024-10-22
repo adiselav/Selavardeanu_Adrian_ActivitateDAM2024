@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Seminar3_1099"
 include(":app")
- 
+include(":app:dam1099seminar4")
