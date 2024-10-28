@@ -1,10 +1,12 @@
 package com.adiselav.dam1099seminar4;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,7 +42,15 @@ public class AdaugareApartament extends AppCompatActivity {
                 CheckBox cbBalcon=findViewById(R.id.CheckBalcon);
                 boolean balcon=((CheckBox)findViewById(R.id.CheckBalcon)).isChecked();
 
-                Apartament ap = new Apartament(adresa,nrCamere,anConstructie,suprafata,balcon);
+                Apartament apartament = new Apartament(adresa,nrCamere,anConstructie,suprafata,balcon);
+
+                Intent it = new Intent();
+                it.putExtra("apartament",apartament);
+                Toast.makeText(AdaugareApartament.this, apartament.toString(), Toast.LENGTH_SHORT).show();
+                //terminam activitatea
+                setResult(RESULT_OK,it);
+                finish();
+
 
             }
         });

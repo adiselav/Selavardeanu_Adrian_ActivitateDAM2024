@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seminar3_1099">
         <activity
+            android:name=".ListaApartamente"
+            android:exported="false" />
+        <activity
             android:name=".AdaugareApartament"
             android:exported="false" />
         <activity

@@ -1,6 +1,9 @@
 package com.adiselav.dam1099seminar4;
 
-public class Apartament {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Apartament implements Parcelable {
     private String adresa;
     private int nrCamere;
     private int anConstructie;
@@ -24,6 +27,41 @@ public class Apartament {
         this.balcon = balcon;
     }
 
+    protected Apartament(Parcel in) {
+        adresa = in.readString();
+        nrCamere = in.readInt();
+        anConstructie = in.readInt();
+        suprafata = in.readFloat();
+        balcon = in.readByte() != 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(adresa);
+        dest.writeInt(nrCamere);
+        dest.writeInt(anConstructie);
+        dest.writeFloat(suprafata);
+        dest.writeByte((byte) (balcon ? 1 : 0));
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    //vector de obiecte:
+    public static final Creator<Apartament> CREATOR = new Creator<Apartament>() {
+        @Override
+        public Apartament createFromParcel(Parcel in) {
+            return new Apartament(in);
+        }
+
+        @Override
+        public Apartament[] newArray(int size) {
+            return new Apartament[size];
+        }
+    };
+    //end
     public String getAdresa() {
         return adresa;
     }
