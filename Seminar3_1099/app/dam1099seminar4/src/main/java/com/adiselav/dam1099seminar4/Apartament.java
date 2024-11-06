@@ -16,7 +16,6 @@ public class Apartament implements Parcelable {
         this.anConstructie = 1960;
         this.suprafata = 20.0F;
         this.balcon = true;
-
     }
 
     public Apartament(String adresa, int nrCamere, int anConstructie, float suprafata, boolean balcon) {
