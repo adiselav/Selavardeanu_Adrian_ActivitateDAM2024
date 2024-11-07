@@ -28,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //initializare lista de obiecte
         apartamente = new ArrayList<>();
+
+        String adresa1="Piata Romana nr.1 ";
+        int nrCamere1=1;
+        int anConstructie1=1960;
+        float suprafata1=19.90f;
+        boolean balcon1=true;
+        apartamente.add(new Apartament(adresa1,nrCamere1,anConstructie1,suprafata1,balcon1));
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -57,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -69,6 +75,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
     //end button
 }
