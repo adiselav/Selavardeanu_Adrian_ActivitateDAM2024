@@ -33,28 +33,12 @@ public class ListaApartamente extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
-            Intent intent = getIntent();
-            if (intent.hasExtra("apartament"))
-            {
-                Apartament apartament = intent.getParcelableExtra("apartament");
-                EditText adresaET = findViewById(R.id.EditAdresa);
-                EditText camereET = findViewById(R.id.EditNrCamere);
-                EditText anET = findViewById(R.id.EditAnConstructie);
-                EditText suprafataET = findViewById(R.id.EditSuprafata);
-                CheckBox balconCB = findViewById(R.id.CheckBalcon);
 
-                adresaET.setText(apartament.getAdresa());
-                camereET.setText(String.valueOf(apartament.getNrCamere()));
-                anET.setText(String.valueOf(apartament.getAnConstructie()));
-                suprafataET.setText(String.valueOf(apartament.getSuprafata()));
-                balconCB.setChecked(apartament.isBalcon());
-
-            }
             return insets;
         });
 
         Intent it=getIntent();
-        List<Apartament> apartamente = it.getParcelableArrayListExtra("apartamente");
+        apartamente = it.getParcelableArrayListExtra("apartamente");
 
         ListView lv = findViewById(R.id.apartamenteLV);
 
@@ -101,6 +85,6 @@ public class ListaApartamente extends AppCompatActivity {
                 apartamente.set(idModificat,data.getParcelableExtra("apartament"));
                 adapter.notifyDataSetChanged();
             }
+        }
     }
-}
 }
