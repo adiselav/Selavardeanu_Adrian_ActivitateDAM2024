@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Exemplu</string>
+    <string name="buna_in_aplicatia_android_studio_ladybug">Buna in aplicatia Android Studio Ladybug!</string>
+    <string name="formular_adaugare_student">Formular Adaugare Student</string>
+    <string name="afisare_lista_studenti">Afisare Lista Studenti</string>
+    <string name="formular_adaugare_student_text">FORMULAR ADAUGARE STUDENT:</string>
+    <string name="nume">NUME:</string>
+    <string name="varsta">VARSTA:</string>
+    <string name="puncte">........</string>
+    <string name="sex">SEX:</string>
+    <string name="feminin">feminin</string>
+    <string name="masculin">masculin</string>
+    <string name="integralist">INTEGRALIST:</string>
+    <string name="da">DA</string>
+    <string name="licenta">LICENTA:</string>
+    <string name="da_licenta">DA</string>
+    <string name="nu_licenta">NU</string>
+    <string name="venit">VENIT</string>
+    <string name="specializare">SPECIALIZARE:</string>
+    <string name="data_nastere">DATA NASTERE:</string>
+    <string name="apasa_ca_sa_adaugi_student">APASA CA SA ADAUGI STUDENT</string>
+    <string name="lista_studenti">LISTA STUDENTI:</string>
+    <string-array name="spinner_entries">
+        <item>Informatica Economica</item>
+        <item>Cibernetica Economica</item>
+        <item>Statistica Economica</item>
+    </string-array>
+</resources>

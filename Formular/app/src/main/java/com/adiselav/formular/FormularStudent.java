@@ -42,12 +42,15 @@ public class FormularStudent extends AppCompatActivity {
                 RadioGroup genRg = findViewById(R.id.editGen);
                 RadioButton genRb = findViewById(genRg.getCheckedRadioButtonId());
                 String gen = genRb.getText().toString();
+
                 Spinner facultateSp = findViewById(R.id.editFacultate);
                 String facultate = facultateSp.getSelectedItem().toString();
+
                 Switch restantaSw = findViewById(R.id.editRestanta);
                 Boolean restanta = restantaSw.isChecked();
                 EditText venitEt = findViewById(R.id.editVenit);
                 float venit = Float.parseFloat(venitEt.getText().toString());
+
                 DatePicker dataDp = findViewById(R.id.editData);
                 int year = dataDp.getYear();
                 int month = dataDp.getMonth();

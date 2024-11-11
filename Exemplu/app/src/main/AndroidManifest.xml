@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Formular"
+        android:theme="@style/Theme.Exemplu"
         tools:targetApi="31">
         <activity
             android:name=".ListaStudenti"
             android:exported="false" />
         <activity
-            android:name=".FormularStudent"
+            android:name=".FormularAdaugare"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
