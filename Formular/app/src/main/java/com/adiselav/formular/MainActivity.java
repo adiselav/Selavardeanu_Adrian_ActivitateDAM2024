@@ -1,4 +1,4 @@
-package com.adiselav.student;
+package com.adiselav.formular;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -18,8 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    //declarare lista de obiecte
-    private List<Student> studentList = null;
+
+    List<Student> studentList = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,28 +32,23 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        //inca suntem onCreate
-        Button btn = findViewById(R.id.formularBtn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), FormularStudent.class);
-                startActivityForResult(intent,500);
-            }
+        Button btn = findViewById(R.id.buttonFormular);
+        btn.setOnClickListener(v -> {
+            Intent it = new Intent(getApplicationContext(), FormularStudent.class);
+            startActivityForResult(it,200);
         });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 500){
-            if (resultCode == RESULT_OK){
-                Student student = data.getParcelableExtra("student");
-                studentList.add(student);
-                Toast.makeText(this, student.toString(), Toast.LENGTH_LONG).show();
+        if (requestCode==200){
+            if (resultCode==RESULT_OK){
+                    Student student = data.getParcelableExtra("student");
+                    Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, student.toString(), Toast.LENGTH_LONG).show();
+                    studentList.add(student);
             }
         }
     }
-
-
 }
