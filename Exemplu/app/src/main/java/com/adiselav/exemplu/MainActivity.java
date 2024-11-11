@@ -1,7 +1,8 @@
-package com.adiselav.formular;
+package com.adiselav.exemplu;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,7 +19,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<Student> studentList = null;
+    private List<Student> studentList = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,20 +33,29 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button btn = findViewById(R.id.buttonFormular);
-        btn.setOnClickListener(v -> {
-            Intent it = new Intent(getApplicationContext(), FormularStudent.class);
-            startActivityForResult(it,200);
+
+        //CREARE STUDENT:
+        Button btn = findViewById(R.id.butonFormular);
+        //METODA PRIN CARE DESCHIDEM O NOUA ACTIVITATE DIN ACTIVITATEA CURENTA
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), FormularAdaugare.class);
+                startActivityForResult(it,200);
+            }
         });
 
-        Button butonulmeu = findViewById(R.id.buttonLista);
-        butonulmeu.setOnClickListener(new View.OnClickListener() {
+        //AFISARE IN LISTA CU ADAPTER DEFAULT ANDROID STUDIO:
+        Button butonulMeu = findViewById(R.id.butonLista);
+        butonulMeu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ListaStudenti.class);
-                startActivityForResult(intent,500);
+                intent.putParcelableArrayListExtra("studenti", (ArrayList<? extends Parcelable>) studentList);
+                startActivity(intent);
             }
         });
+
     }
 
     @Override
@@ -53,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode==200){
             if (resultCode==RESULT_OK){
-                    Student student = data.getParcelableExtra("student");
-                    Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(this, student.toString(), Toast.LENGTH_LONG).show();
-                    studentList.add(student);
+                Student student = data.getParcelableExtra("student");
+                Toast.makeText(this, "MAIN", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, student.toString(), Toast.LENGTH_LONG).show();
+                studentList.add(student);
             }
         }
     }
