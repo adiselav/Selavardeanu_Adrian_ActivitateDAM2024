@@ -67,11 +67,13 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/feminin"/>
+                        android:text="@string/feminin"
+                        android:id="@+id/radioFemale"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/masculin"/>
+                        android:text="@string/masculin"
+                        android:id="@+id/radioMale"/>
                 </RadioGroup>
             </LinearLayout>
             <LinearLayout

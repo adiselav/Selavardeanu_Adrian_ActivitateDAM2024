@@ -37,15 +37,13 @@ public class FormularAdaugare extends AppCompatActivity {
             return insets;
         });
 
-        //--------------------------------------------------------------------------------
-        //modificare
         Intent it = getIntent();
-        if (it.hasExtra("studenti")){
+        if (it.hasExtra("studenti")) {
             Student student = it.getParcelableExtra("studenti");
+
             EditText numeEt = findViewById(R.id.editNume);
             EditText varstaEt = findViewById(R.id.editVarsta);
             RadioGroup sexRg = findViewById(R.id.editSex);
-            RadioButton sexRb = findViewById(sexRg.getCheckedRadioButtonId());
             CheckBox integralistCb = findViewById(R.id.editIntegralist);
             Switch licentaSw = findViewById(R.id.editLicenta);
             RatingBar venitRb = findViewById(R.id.editVenit);
@@ -54,21 +52,28 @@ public class FormularAdaugare extends AppCompatActivity {
 
             numeEt.setText(student.getNume());
             varstaEt.setText(String.valueOf(student.getVarsta()));
-            sexRb.setText(student.getSex());
+
+            String sex = student.getSex();
+            if (sex != null) {
+                if (sex.equals("Male")) {
+                    sexRg.check(R.id.radioMale); // Make sure R.id.radioMale is the ID of the Male RadioButton
+                } else if (sex.equals("Female")) {
+                    sexRg.check(R.id.radioFemale); // Make sure R.id.radioFemale is the ID of the Female RadioButton
+                }
+            }
+
             integralistCb.setChecked(student.isIntegralist());
             licentaSw.setChecked(student.isLicenta());
             venitRb.setRating(student.getVenit());
-            ArrayAdapter adapter = (ArrayAdapter)specializareSp.getAdapter();
+
+            ArrayAdapter adapter = (ArrayAdapter) specializareSp.getAdapter();
             int position = adapter.getPosition(student.getSpecializare());
             specializareSp.setSelection(position);
+
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(student.getDataNastere());
-            dataDp.updateDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH));
-
-
+            dataDp.updateDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         }
-        //--------------------------------------------------------------------------------
-
 
         Button btn = findViewById(R.id.butonAdaugareStudent);
         btn.setOnClickListener(new View.OnClickListener() {
