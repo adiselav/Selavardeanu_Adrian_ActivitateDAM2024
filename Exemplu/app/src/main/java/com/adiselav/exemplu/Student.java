@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import java.util.Date;
 
 public class Student implements Parcelable {
-//start class
+    //start class
     private String nume; //EditText
     private int varsta; //EditText
     private String sex; //RadioButton
