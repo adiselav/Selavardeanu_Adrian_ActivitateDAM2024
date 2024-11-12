@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Student_Exemplu</string>
+    <string name="bine_ati_venit_in_aplicatia_android_studio_ladybug">Bine ati venit in aplicatia Android Studio LadyBug!</string>
+    <string name="formular_student">FORMULAR STUDENT</string>
+    <string name="lista_studenti">LISTA STUDENTI</string>
+    <string name="formular_student_text">FORMULAR STUDENT:</string>
+    <string name="nume">NUME:</string>
+    <string name="varsta">VARSTA:</string>
+    <string name="specializare">SPECIALIZARE:</string>
+    <string name="data">DATA:</string>
+    <string name="adaugare_student">ADAUGARE STUDENT</string>
+    <string name="introduceti_numele">INTRODUCETI NUMELE</string>
+    <string name="introduceti_varsta">INTRODUCETI VARSTA</string>
+    <string-array name="spinner_entries">
+        <item>Informatica Economica</item>
+        <item>Cibernetica Economica</item>
+        <item>Statistica Economica</item>
+        <item>Drept Economic</item>
+    </string-array>
 </resources>
