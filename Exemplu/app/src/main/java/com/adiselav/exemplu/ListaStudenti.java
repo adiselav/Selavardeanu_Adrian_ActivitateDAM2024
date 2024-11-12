@@ -39,7 +39,7 @@ public class ListaStudenti extends AppCompatActivity {
 
         ListView lv = findViewById(R.id.studentiLV);
 
-        //mergem pe varianta adapter default
+        //mergem pe varianta array adapter default
         //ne trebuie un adaptor pentru lista
         ArrayAdapter<Student> adaptor = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, studentList);
         lv.setAdapter(adaptor);
