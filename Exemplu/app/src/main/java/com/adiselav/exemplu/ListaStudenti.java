@@ -55,13 +55,9 @@ public class ListaStudenti extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intentModifica = new Intent(getApplicationContext(), FormularAdaugare.class);
-                intentModifica.putExtra("studenti",studentList.get(position));
+                intentModifica.putExtra("studenti", studentList.get(position));
                 idModificat = position;
-                startActivityForResult(intentModifica,200);
-                Toast.makeText(ListaStudenti.this, studentList.get(position).toString(), Toast.LENGTH_SHORT).show();
-
-
-
+                startActivityForResult(intentModifica, 200);
             }
         });
 
