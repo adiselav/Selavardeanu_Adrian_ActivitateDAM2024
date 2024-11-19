@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="29sp"
-            android:text="Formular Adaugare Apartament"/>
+            android:text="@string/formular_adaugare_apartament"/>
     </LinearLayout>
 
     <LinearLayout
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adresa: "/>
+            android:text="@string/adresa"/>
         <EditText
             android:id="@+id/EditAdresa"
             android:inputType="text"

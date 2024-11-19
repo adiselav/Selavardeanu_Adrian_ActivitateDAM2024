@@ -3,4 +3,7 @@
     <string name="textul_butonului">Adaugare Apartament</string>
     <string name="hello_world">Hello World!</string>
     <string name="lista_completa_apartamente">Lista Completa Apartamente</string>
+    <string name="lista_imagini">Lista Imagini</string>
+    <string name="formular_adaugare_apartament">Formular Adaugare Apartament</string>
+    <string name="adresa">Adresa:</string>
 </resources>
