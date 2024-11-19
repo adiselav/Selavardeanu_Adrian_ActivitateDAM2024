@@ -13,7 +13,7 @@ import java.util.List;
 public class ApartamentAdapter extends BaseAdapter {
 
     private List<Apartament> apartamentList = null;
-    private Context ctx ;
+    private Context ctx;
     private int resursaLayout;
 
     public ApartamentAdapter(List<Apartament> apartamentList, Context ctx, int resursaLayout)
