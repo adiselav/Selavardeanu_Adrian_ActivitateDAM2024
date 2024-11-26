@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.Adapter;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -27,7 +30,9 @@ import java.util.concurrent.Executors;
 
 public class ListaImagini extends AppCompatActivity {
 
-    private List<ImaginiDomeniu> lista;
+    private List<ImaginiDomeniu> lista = new ArrayList<>();;
+    List<Bitmap> imagini = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +44,7 @@ public class ListaImagini extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        List<Bitmap> imagini = new ArrayList<>();
+        imagini = new ArrayList<>();
         List<String> linkuriImagini = new ArrayList<>();
         linkuriImagini.add("https://mrexclusivitate.ro/oferte/4348/xlp__apartament-3-camere-de-inchiriat-obor-bucuresti_64e9c567c747a2.jpg");
         linkuriImagini.add("https://norisk.ro/oferte/257/xlp__apartament-3-camere-de-vanzare-colentina-bucuresti_62331cf78844e5.jpg");
@@ -60,37 +64,40 @@ public class ListaImagini extends AppCompatActivity {
                         URL url = new URL(link);
                         connection = (HttpURLConnection) url.openConnection();
                         InputStream is = connection.getInputStream();
-                       imagini.add(BitmapFactory.decodeStream(is));
+                        imagini.add(BitmapFactory.decodeStream(is));
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                //for
                 }
-            //run
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        lista = new ArrayList<>();
+                lista.add(new ImaginiDomeniu("Apartament 3 camere de inchiriat Obor Bucuresti",imagini.get(0),"https://mrexclusivitate.ro/"));
+                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Colentina Bucuresti",imagini.get(1),"https://norisk.ro/"));
+                lista.add(new ImaginiDomeniu("Apartament 2 camere de vanzare Colentina Bucuresti",imagini.get(2),"https://casevechi.ro/"));
+                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Sector 2 Bucuresti",imagini.get(3),"https://www.executarilicitatii.ro/"));
+                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Bucur Obor Bucuresti",imagini.get(4),"https://murzea.ro/"));
+
+                ListView lv = findViewById(R.id.imagini);
+                ImagineAdapter adapter = new ImagineAdapter(lista,getApplicationContext(),R.layout.imagine_item);
+                        lv.setAdapter(adapter);
+                    }
+                });
             }
-        //.execute()
         });
-        handler.post(new Runnable() {
+        ListView lv = findViewById(R.id.imagini);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void run() {
-                lista = new ArrayList<>();
-//                lista.add(new ImaginiDomeniu("Apartament 3 camere de inchiriat Obor Bucuresti",imagini.get(0),"https://mrexclusivitate.ro/"));
-//                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Colentina Bucuresti",imagini.get(0),"https://norisk.ro/"));
-//                lista.add(new ImaginiDomeniu("Apartament 2 camere de vanzare Colentina Bucuresti",imagini.get(0),"https://casevechi.ro/"));
-//                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Sector 2 Bucuresti",imagini.get(0),"https://www.executarilicitatii.ro/"));
-//                lista.add(new ImaginiDomeniu("Apartament 3 camere de vanzare Bucur Obor Bucuresti",imagini.get(0),"https://murzea.ro/"));
-                //run
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Intent it = new Intent(getApplicationContext(), WebViewActivity.class);
+                //it.putExtra("link", lista.get(position).getLink());
+                //startActivity(it);
             }
-            //.post()
         });
-//        ListView lv = findViewById(R.id.imagini);
-//        ImagineAdapter adapter = new ImagineAdapter(lista,getApplicationContext(),R.layout.imagine_item);
-//        lv.setAdapter(adapter);
         //adapter.notifyDataSetChanged();
-    //onCreate
     }
 
-//ListaImaginiActivity
 }
