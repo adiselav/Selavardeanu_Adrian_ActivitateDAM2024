@@ -45,7 +45,7 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText orasET = findViewById(R.id.EditOras);
-                String link = "";
+                String link = "test";
                 Executor executor = Executors.newSingleThreadExecutor();
                 Handler handler = new Handler(Looper.myLooper());
 
