@@ -1,5 +1,6 @@
 package com.adiselav.dam1099seminar4;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,7 +39,9 @@ public class ImagineAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(ctx);
-        View view = inflater.inflate(resursaLayout, parent,false);
+//        View view = inflater.inflate(resursaLayout, parent,false);
+        @SuppressLint("ViewHolder") View view = inflater.inflate(resursaLayout, parent,false);
+
         ImageView imageView = view.findViewById(R.id.imagineIV);
 
         ImaginiDomeniu imagine = (ImaginiDomeniu)getItem(position);
