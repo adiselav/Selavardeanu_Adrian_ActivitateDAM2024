@@ -35,7 +35,7 @@
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Introduceti Adresa" />
+            android:hint="@string/introduceti_adresa" />
 
     </LinearLayout>
 
@@ -49,13 +49,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nr. Camere: "/>
+            android:text="@string/nr_camere"/>
         <EditText
             android:id="@+id/EditNrCamere"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Introduceti Numarul de camere" />
+            android:hint="@string/introduceti_numarul_de_camere" />
 
     </LinearLayout>
 
@@ -68,13 +68,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="An Constructie: "/>
+            android:text="@string/an_constructie"/>
         <EditText
             android:id="@+id/EditAnConstructie"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Introduceti Anul de constructie" />
+            android:hint="@string/introduceti_anul_de_constructie" />
 
     </LinearLayout>
 
@@ -88,13 +88,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Suprafata: "/>
+            android:text="@string/suprafata"/>
         <EditText
             android:id="@+id/EditSuprafata"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Introduceti Suprafata" />
+            android:hint="@string/introduceti_suprafata" />
 
     </LinearLayout>
 
@@ -108,12 +108,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Balcon: "/>
+            android:text="@string/balcon"/>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/CheckBalcon"
-            android:text="DA"></CheckBox>
+            android:text="@string/da"></CheckBox>
 
     </LinearLayout>
 
@@ -123,10 +123,10 @@
         >
         <Button
             android:id="@+id/buttonAdaugareApartament"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:gravity="left"
+            android:gravity="center_horizontal"
             android:text="@string/textul_butonului"/>
     </LinearLayout>
 

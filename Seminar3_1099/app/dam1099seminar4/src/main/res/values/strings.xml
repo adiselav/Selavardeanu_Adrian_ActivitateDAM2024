@@ -5,5 +5,18 @@
     <string name="lista_completa_apartamente">Lista Completa Apartamente</string>
     <string name="lista_imagini">Lista Imagini</string>
     <string name="formular_adaugare_apartament">Formular Adaugare Apartament</string>
-    <string name="adresa">Adresa:</string>
+    <string name="adresa">Adresa: </string>
+    <string name="accuweather">AccuWeather</string>
+    <string name="apelare_api">Apelare API</string>
+    <string name="introduceti_adresa">Introduceti Adresa</string>
+    <string name="nr_camere">Nr. Camere: </string>
+    <string name="introduceti_numarul_de_camere">Introduceti Numarul de camere</string>
+    <string name="an_constructie">An Constructie: </string>
+    <string name="introduceti_anul_de_constructie">Introduceti Anul de constructie</string>
+    <string name="suprafata">Suprafata: </string>
+    <string name="introduceti_suprafata">Introduceti Suprafata</string>
+    <string name="balcon">Balcon: </string>
+    <string name="da">DA</string>
+    <string name="enter_the_city">Enter the city</string>
+    <string name="city">City: </string>
 </resources>
