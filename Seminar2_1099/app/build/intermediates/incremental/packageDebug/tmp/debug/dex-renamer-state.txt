@@ -1,0 +1,10 @@
+#Mon Oct 14 01:04:50 EEST 2024
+base.0=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar2_1099\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar2_1099\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar2_1099\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=12/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
