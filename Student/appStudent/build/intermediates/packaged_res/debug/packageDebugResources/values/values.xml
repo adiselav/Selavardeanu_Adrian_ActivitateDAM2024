@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="varianteSpinner">
+        <item>Cibernetica Economica</item>
+        <item>Imformatica Economica</item>
+        <item>Statistica Economica</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="adauga_un_student">Adauga un student</string>
+    <string name="app_name">Student</string>
+    <string name="btn1">Formular Student</string>
+    <string name="btn2">Lista Studenti</string>
+    <string name="data">Data:</string>
+    <string name="facultatea">Facultatea:</string>
+    <string name="hintEt1">Introduceti numele</string>
+    <string name="integralist">Integralist:</string>
+    <string name="introduceti_varsta">Introduceti varsta</string>
+    <string name="introduceti_venitul">Introduceti venitul</string>
+    <string name="salut">Bine ati venit in aplicatia Android Studio</string>
+    <string name="textTw1">Numele:</string>
+    <string name="titlu">FORMULAR ADAUGARE STUDENT</string>
+    <string name="varsta">Varsta:</string>
+    <string name="venitul">Venitul:</string>
+    <style name="Base.Theme.Student" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Student" parent="Base.Theme.Student"/>
+</resources>
