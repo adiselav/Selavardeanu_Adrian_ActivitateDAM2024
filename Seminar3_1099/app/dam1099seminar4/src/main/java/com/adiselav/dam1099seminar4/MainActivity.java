@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button butonListaImagini=findViewById(R.id.buttonListaImagini);
+        Button butonListaImagini = findViewById(R.id.buttonListaImagini);
         butonListaImagini.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button butonVreme = findViewById(R.id.buttonWeather);
+        butonVreme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), WeatherActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
