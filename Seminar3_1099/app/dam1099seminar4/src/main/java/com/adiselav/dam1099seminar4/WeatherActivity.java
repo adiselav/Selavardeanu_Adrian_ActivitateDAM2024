@@ -45,7 +45,8 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText orasET = findViewById(R.id.EditOras);
-                String link = "";
+                String apikey = "";
+                String link = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+apikey+"&q="+orasET.getText().toString();
 
                 Executor executor = Executors.newSingleThreadExecutor();
                 Handler handler = new Handler(Looper.myLooper());
