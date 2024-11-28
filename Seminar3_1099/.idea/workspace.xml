@@ -57,7 +57,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2cd0230-79d2-43c6-b51e-1d9f7dfe5f3a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dam1099seminar4/src/main/java/com/adiselav/dam1099seminar4/WeatherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/dam1099seminar4/src/main/java/com/adiselav/dam1099seminar4/WeatherActivity.java" afterDir="false" />
     </list>
