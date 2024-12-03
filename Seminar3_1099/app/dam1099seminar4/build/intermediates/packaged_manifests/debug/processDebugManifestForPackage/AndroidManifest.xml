@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Seminar3_1099" >
+        android:theme="@style/Theme.Seminar3_1099"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.adiselav.dam1099seminar4.WeatherActivity"
             android:exported="false" />
@@ -48,6 +49,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

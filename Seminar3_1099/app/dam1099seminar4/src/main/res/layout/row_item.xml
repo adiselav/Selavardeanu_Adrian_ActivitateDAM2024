@@ -2,14 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center_horizontal">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -17,30 +23,35 @@
                 android:textSize="32sp"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"/>
+                android:layout_margin="20dp"
+                android:foregroundGravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/camereApartament"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:foregroundGravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/constructieApartament"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:foregroundGravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/suprafataApartament"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:foregroundGravity="center_horizontal"/>
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/balconApartament"
                 android:clickable="false"
                 android:enabled="false"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:foregroundGravity="center_horizontal"/>
         </LinearLayout>
     </ScrollView>
 
