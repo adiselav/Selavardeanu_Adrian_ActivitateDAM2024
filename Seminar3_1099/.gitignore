@@ -65,3 +65,5 @@ proguard-rules.pro
 # Android NDK
 ndkBuild/
 local.properties
+
+Seminar3_1099/local.properties
