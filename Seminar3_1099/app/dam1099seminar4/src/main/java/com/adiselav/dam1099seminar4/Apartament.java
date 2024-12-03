@@ -3,7 +3,14 @@ package com.adiselav.dam1099seminar4;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Apartament implements Parcelable {
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "Apartamente")
+public class Apartament implements Parcelable{
+    @PrimaryKey(autoGenerate = true)
+    private int id;
     private String adresa;
     private int nrCamere;
     private int anConstructie;
@@ -27,6 +34,7 @@ public class Apartament implements Parcelable {
     }
 
     protected Apartament(Parcel in) {
+        id = in.readInt();
         adresa = in.readString();
         nrCamere = in.readInt();
         anConstructie = in.readInt();
@@ -36,6 +44,7 @@ public class Apartament implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
         dest.writeString(adresa);
         dest.writeInt(nrCamere);
         dest.writeInt(anConstructie);
@@ -61,6 +70,15 @@ public class Apartament implements Parcelable {
         }
     };
     //end
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getAdresa() {
         return adresa;
     }

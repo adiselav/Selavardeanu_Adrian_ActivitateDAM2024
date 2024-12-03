@@ -23,8 +23,6 @@ public class ApartamentAdapter extends BaseAdapter {
         this.resursaLayout = resursaLayout;
     }
 
-
-
     @Override
     public int getCount() {
         return apartamentList.size();

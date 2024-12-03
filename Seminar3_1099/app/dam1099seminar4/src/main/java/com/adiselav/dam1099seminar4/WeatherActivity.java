@@ -28,7 +28,10 @@ import java.net.URL;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+import android.util.Log;
+
 public class WeatherActivity extends AppCompatActivity {
+    public String cheieOras = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +48,9 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText orasET = findViewById(R.id.EditOras);
-                String apikey = "";
-                String link = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+apikey+"&q="+orasET.getText().toString();
+
+                String apiKey = BuildConfig.API_KEY;
+                String link = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+apiKey+"&q="+orasET.getText().toString();
 
                 Executor executor = Executors.newSingleThreadExecutor();
                 Handler handler = new Handler(Looper.myLooper());
@@ -71,7 +75,7 @@ public class WeatherActivity extends AppCompatActivity {
 
                             JSONArray vector = new JSONArray(response.toString());
                             JSONObject obiect = vector.getJSONObject(0);
-                            String cheieOras = obiect.getString("Key");
+                            cheieOras = obiect.getString("Key");
 
                         } catch (IOException | JSONException e) {
                             throw new RuntimeException(e);
@@ -80,6 +84,7 @@ public class WeatherActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 TextView afisare = findViewById(R.id.TVafisare);
+                                afisare.setText(cheieOras);
 
                             }
                         });

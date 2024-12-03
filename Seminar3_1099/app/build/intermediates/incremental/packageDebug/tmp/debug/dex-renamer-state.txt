@@ -1,4 +1,4 @@
-#Tue Oct 22 16:51:02 EEST 2024
+#Tue Dec 03 23:37:20 EET 2024
 base.0=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar3_1099\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar3_1099\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\ASE\\an3\\sem1\\DAMGit\\Seminar3_1099\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex

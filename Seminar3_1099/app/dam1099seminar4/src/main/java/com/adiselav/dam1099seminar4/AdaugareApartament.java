@@ -13,9 +13,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.room.Room;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class AdaugareApartament extends AppCompatActivity {
-
+    private ApartamentDatabase database = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +29,8 @@ public class AdaugareApartament extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
+        database = Room.databaseBuilder(this,ApartamentDatabase.class, "ApartamentDB").build();
 
         Intent intent = getIntent();
         if (intent.hasExtra("apartament"))
@@ -38,12 +42,12 @@ public class AdaugareApartament extends AppCompatActivity {
             EditText suprafataET = findViewById(R.id.EditSuprafata);
             CheckBox balconCB = findViewById(R.id.CheckBalcon);
 
+            assert apartament != null;
             adresaET.setText(apartament.getAdresa());
             camereET.setText(String.valueOf(apartament.getNrCamere()));
             anET.setText(String.valueOf(apartament.getAnConstructie()));
             suprafataET.setText(String.valueOf(apartament.getSuprafata()));
             balconCB.setChecked(apartament.isBalcon());
-
         }
 
         Button btnAdaugareApartament=findViewById(R.id.buttonAdaugareApartament);
@@ -62,6 +66,14 @@ public class AdaugareApartament extends AppCompatActivity {
                 boolean balcon=((CheckBox)findViewById(R.id.CheckBalcon)).isChecked();
 
                 Apartament apartament = new Apartament(adresa,nrCamere,anConstructie,suprafata,balcon);
+
+                Executor executor = Executors.newSingleThreadExecutor();
+                executor.execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        database.getDaoObject().insertApartament(apartament);
+                    }
+                });
 
                 Intent it = new Intent();
                 it.putExtra("apartament",apartament);

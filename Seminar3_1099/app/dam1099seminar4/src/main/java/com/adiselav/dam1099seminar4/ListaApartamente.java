@@ -2,6 +2,8 @@ package com.adiselav.dam1099seminar4;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,11 +20,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class ListaApartamente extends AppCompatActivity {
     private List<Apartament> apartamente=null;
     private int idModificat=0;
     private ApartamentAdapter adapter=null;
+    private ApartamentDatabase apartamentDatabase = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +49,11 @@ public class ListaApartamente extends AppCompatActivity {
 
 //        ArrayAdapter<Apartament> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1,apartamente);
 //        lv.setAdapter(adapter);
-        adapter=new ApartamentAdapter(apartamente,getApplicationContext(),R.layout.row_item);
-        lv.setAdapter(adapter);
+//        adapter=new ApartamentAdapter(apartamente,getApplicationContext(),R.layout.row_item);
+//        lv.setAdapter(adapter);
+
+        Executor executor = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
 
 //        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
@@ -53,6 +61,20 @@ public class ListaApartamente extends AppCompatActivity {
 //                Toast.makeText(ListaApartamente.this, apartamente.get(i).toString(), Toast.LENGTH_LONG).show();
 //            }
 //        });
+
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    apartamente = apartamentDatabase.getDaoObject().getApartamente();
+                } finally {
+                    handler.post(()-> {
+                        adapter = new ApartamentAdapter(apartamente, getApplicationContext(), R.layout.row_item);
+                        lv.setAdapter(adapter);
+                    });
+                }
+            }
+        });
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
