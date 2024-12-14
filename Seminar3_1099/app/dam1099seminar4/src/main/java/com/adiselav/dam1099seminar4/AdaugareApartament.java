@@ -1,6 +1,7 @@
 package com.adiselav.dam1099seminar4;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -78,6 +79,10 @@ public class AdaugareApartament extends AppCompatActivity {
                 Intent it = new Intent();
                 it.putExtra("apartament",apartament);
                 Toast.makeText(AdaugareApartament.this, apartament.toString(), Toast.LENGTH_SHORT).show();
+                SharedPreferences sp = getSharedPreferences("obiecteApartament",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString(apartament.getKey(),apartament.toString());
+                editor.apply();
                 //terminam activitatea
                 setResult(RESULT_OK,it);
                 finish();

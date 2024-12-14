@@ -3207,6 +3207,7 @@ int id bounceEnd 0x7f08006b
 int id bounceStart 0x7f08006c
 int id buttonAdaugareApartament 0x7f08006d
 int id buttonApelareAPI 0x7f08006e
+int id buttonFavorite 0x7f08020b
 int id buttonLV 0x7f08006f
 int id buttonListaImagini 0x7f080070
 int id buttonPanel 0x7f080071
@@ -3734,6 +3735,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_adaugare_apartament 0x7f0b001c
+int layout activity_apartamente_favorite 0x7f0b0072
 int layout activity_lista_apartamente 0x7f0b001d
 int layout activity_lista_imagini 0x7f0b001e
 int layout activity_main 0x7f0b001f
@@ -3882,6 +3884,7 @@ int string error_icon_content_description 0x7f0f0038
 int string exposed_dropdown_menu_content_description 0x7f0f0039
 int string fab_transformation_scrim_behavior 0x7f0f003a
 int string fab_transformation_sheet_behavior 0x7f0f003b
+int string favorite 0x7f0f00ba
 int string formular_adaugare_apartament 0x7f0f003c
 int string hello_world 0x7f0f003d
 int string hide_bottom_view_on_scroll_behavior 0x7f0f003e

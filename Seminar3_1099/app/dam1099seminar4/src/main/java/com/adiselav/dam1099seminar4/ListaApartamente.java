@@ -1,6 +1,7 @@
 package com.adiselav.dam1099seminar4;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -18,6 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
 
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -46,6 +49,8 @@ public class ListaApartamente extends AppCompatActivity {
         apartamente = it.getParcelableArrayListExtra("apartamente");
 
         ListView lv = findViewById(R.id.apartamenteLV);
+
+        apartamentDatabase = Room.databaseBuilder(getApplicationContext(),ApartamentDatabase.class,"ApartamentDB").build();
 
 //        ArrayAdapter<Apartament> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1,apartamente);
 //        lv.setAdapter(adapter);
@@ -90,8 +95,13 @@ public class ListaApartamente extends AppCompatActivity {
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int i, long id) {
-                apartamente.remove(i);
-                adapter.notifyDataSetChanged();
+//                apartamente.remove(i);
+//                adapter.notifyDataSetChanged();
+//                return false;
+                SharedPreferences sp = getSharedPreferences("obiecteApartament",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString(apartamente.get(i).getKey(),apartamente.get(i).toString());
+                editor.apply();
                 return false;
             }
         });

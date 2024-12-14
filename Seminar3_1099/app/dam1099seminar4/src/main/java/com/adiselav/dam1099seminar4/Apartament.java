@@ -119,6 +119,14 @@ public class Apartament implements Parcelable{
         this.balcon = balcon;
     }
 
+    public String getKey(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.id);
+        sb.append("-");
+        sb.append(this.adresa);
+        return sb.toString();
+    }
+
     @Override
     public String toString()
     {

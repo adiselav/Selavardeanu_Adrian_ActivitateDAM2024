@@ -24,7 +24,7 @@
 17-->[androidx.core:core:1.13.0] C:\Users\adise\.gradle\caches\8.9\transforms\e50212a2423a68ce4bb593244e763eab\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:6:5-35:19
+19-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:6:5-38:19
 20        android:allowBackup="true"
 20-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:7:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -46,120 +46,126 @@
 30-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:13:9-44
 31        <activity
 31-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:14:9-16:40
-32            android:name="com.adiselav.dam1099seminar4.WeatherActivity"
-32-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:15:13-44
+32            android:name="com.adiselav.dam1099seminar4.ApartamenteFavorite"
+32-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:15:13-48
 33            android:exported="false" />
 33-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:16:13-37
 34        <activity
 34-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:17:9-19:40
-35            android:name="com.adiselav.dam1099seminar4.ListaImagini"
-35-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:18:13-41
+35            android:name="com.adiselav.dam1099seminar4.WeatherActivity"
+35-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:18:13-44
 36            android:exported="false" />
 36-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:19:13-37
 37        <activity
 37-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:20:9-22:40
-38            android:name="com.adiselav.dam1099seminar4.ListaApartamente"
-38-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:21:13-45
+38            android:name="com.adiselav.dam1099seminar4.ListaImagini"
+38-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:21:13-41
 39            android:exported="false" />
 39-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:22:13-37
 40        <activity
 40-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:23:9-25:40
-41            android:name="com.adiselav.dam1099seminar4.AdaugareApartament"
-41-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:24:13-47
+41            android:name="com.adiselav.dam1099seminar4.ListaApartamente"
+41-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:24:13-45
 42            android:exported="false" />
 42-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:25:13-37
 43        <activity
-43-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:26:9-34:20
-44            android:name="com.adiselav.dam1099seminar4.MainActivity"
-44-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:27:13-41
-45            android:exported="true" >
-45-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:28:13-36
-46            <intent-filter>
-46-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:29:13-33:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:30:17-69
-47-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:30:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:32:17-77
-49-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:32:27-74
-50            </intent-filter>
-51        </activity>
-52
-53        <service
-53-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-54            android:name="androidx.room.MultiInstanceInvalidationService"
-54-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-55            android:directBootAware="true"
-55-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-56            android:exported="false" />
-56-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-57
-58        <provider
-58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-60            android:authorities="com.adiselav.dam1099seminar4.androidx-startup"
-60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-61            android:exported="false" >
-61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-62            <meta-data
-62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+43-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:26:9-28:40
+44            android:name="com.adiselav.dam1099seminar4.AdaugareApartament"
+44-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:27:13-47
+45            android:exported="false" />
+45-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:28:13-37
+46        <activity
+46-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:29:9-37:20
+47            android:name="com.adiselav.dam1099seminar4.MainActivity"
+47-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:30:13-41
+48            android:exported="true" >
+48-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:31:13-36
+49            <intent-filter>
+49-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:32:13-36:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:33:17-69
+50-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:33:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:35:17-77
+52-->C:\ASE\an3\sem1\DAMGit\Seminar3_1099\app\dam1099seminar4\src\main\AndroidManifest.xml:35:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <service
+56-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+57            android:name="androidx.room.MultiInstanceInvalidationService"
+57-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+58            android:directBootAware="true"
+58-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+59            android:exported="false" />
+59-->[androidx.room:room-runtime:2.6.1] C:\Users\adise\.gradle\caches\8.9\transforms\68606ff50e4689d6253cdf0aa63ad03a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.adiselav.dam1099seminar4.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\adise\.gradle\caches\8.9\transforms\57dbe1f84786cd5a0da0f47e11695be4\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 68            <meta-data
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 70                android:value="androidx.startup" />
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-71        </provider>
-72
-73        <receiver
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-75            android:directBootAware="false"
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-76            android:enabled="true"
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-77            android:exported="true"
-77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-78            android:permission="android.permission.DUMP" >
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-79            <intent-filter>
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-81            </intent-filter>
+70-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\adise\.gradle\caches\8.9\transforms\7bd196506239381c0140a71a6b024f51\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+73                android:value="androidx.startup" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+74        </provider>
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 82            <intent-filter>
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 84            </intent-filter>
 85            <intent-filter>
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-86                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 87            </intent-filter>
 88            <intent-filter>
-88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-89                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 90            </intent-filter>
-91        </receiver>
-92    </application>
-93
-94</manifest>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adise\.gradle\caches\8.9\transforms\176ec9c7759533fe849e16e9fd6c3570\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>
