@@ -1,86 +1,94 @@
 [
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_activity_adaugare_apartament.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\activity_adaugare_apartament.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_activity_lista_apartamente.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\activity_lista_apartamente.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_lista_apartamente.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_lista_apartamente.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_row_item.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\row_item.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/drawable/ic_launcher_background.xml"
+        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_apartamente_favorite.xml.flat",
+        "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_apartamente_favorite.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_imagine_item.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\imagine_item.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_lista_imagini.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_lista_imagini.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_row_item.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/row_item.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_weather.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_weather.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_activity_lista_imagini.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\activity_lista_imagini.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_activity_weather.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\activity_weather.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_adaugare_apartament.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_adaugare_apartament.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\layout\\activity_main.xml"
     },
     {
         "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_activity_main.xml.flat",
         "source": "com.adiselav.dam1099seminar4-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.adiselav.dam1099seminar4-debug-4:/layout_imagine_item.xml.flat",
-        "source": "com.adiselav.dam1099seminar4-main-6:/layout/imagine_item.xml"
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\adise\\.gradle\\daemon\\8.9\\com.adiselav.dam1099seminar4-main-6:\\drawable\\ic_launcher_foreground.xml"
     }
 ]

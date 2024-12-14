@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Seminar3_1099"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ApartamenteFavorite"
+            android:exported="false" />
+        <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity

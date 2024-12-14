@@ -29,6 +29,9 @@
         android:theme="@style/Theme.Seminar3_1099"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.adiselav.dam1099seminar4.ApartamenteFavorite"
+            android:exported="false" />
+        <activity
             android:name="com.adiselav.dam1099seminar4.WeatherActivity"
             android:exported="false" />
         <activity

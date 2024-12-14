@@ -18,6 +18,7 @@ id apartamenteLV
 id balconApartament
 id buttonAdaugareApartament
 id buttonApelareAPI
+id buttonFavorite
 id buttonLV
 id buttonListaImagini
 id buttonWeather
@@ -29,6 +30,7 @@ id main
 id suprafataApartament
 id textView
 layout activity_adaugare_apartament
+layout activity_apartamente_favorite
 layout activity_lista_apartamente
 layout activity_lista_imagini
 layout activity_main
@@ -46,6 +48,7 @@ string balcon
 string city
 string da
 string enter_the_city
+string favorite
 string formular_adaugare_apartament
 string hello_world
 string introduceti_adresa

@@ -51,6 +51,7 @@
                 android:clickable="false"
                 android:enabled="false"
                 android:textSize="16sp"
+                android:focusable="false"
                 android:foregroundGravity="center_horizontal"/>
         </LinearLayout>
     </ScrollView>
