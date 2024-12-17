@@ -9,4 +9,9 @@
     <string name="fisier_json">fisier json</string>
     <string name="name">name</string>
     <string name="_18">18</string>
+    <string name="stergere">Stergere</string>
+    <string name="lista_studenti">Lista Studenti</string>
+    <string name="lista_favorite">Lista Favorite</string>
+    <string name="numele">numele</string>
+    <string name="varsta_student">varsta</string>
 </resources>
