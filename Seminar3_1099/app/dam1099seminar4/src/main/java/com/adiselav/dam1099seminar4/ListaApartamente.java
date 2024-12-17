@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,6 +23,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -40,13 +42,13 @@ public class ListaApartamente extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-
-
             return insets;
         });
 
         Intent it=getIntent();
+
         apartamente = it.getParcelableArrayListExtra("apartamente");
+//      apartamente = new ArrayList<>();
 
         ListView lv = findViewById(R.id.apartamenteLV);
 
@@ -84,6 +86,7 @@ public class ListaApartamente extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Log.d("long click", " click");
                 Intent intentModifica = new Intent(getApplicationContext(), AdaugareApartament.class);
                 intentModifica.putExtra("apartament", apartamente.get(position));
                 idModificat = position;
@@ -95,9 +98,11 @@ public class ListaApartamente extends AppCompatActivity {
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int i, long id) {
-//                apartamente.remove(i);
-//                adapter.notifyDataSetChanged();
-//                return false;
+                Log.d("long click", "Long click");
+//              apartamente.remove(i);
+//              adapter.notifyDataSetChanged();
+//              return false;
+                // Shared Preferences
                 SharedPreferences sp = getSharedPreferences("obiecteApartament",MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putString(apartamente.get(i).getKey(),apartamente.get(i).toString());

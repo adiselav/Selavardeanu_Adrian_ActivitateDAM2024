@@ -14,8 +14,9 @@ id EditOras
 id EditSuprafata
 id TVafisare
 id adresaApartament
+id apartamentBalcon
 id apartamenteLV
-id balconApartament
+id butonDeDelete
 id buttonAdaugareApartament
 id buttonApelareAPI
 id buttonFavorite
@@ -47,6 +48,7 @@ string app_name
 string balcon
 string city
 string da
+string delete
 string enter_the_city
 string favorite
 string formular_adaugare_apartament

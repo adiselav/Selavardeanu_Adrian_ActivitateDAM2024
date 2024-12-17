@@ -6,10 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListaApartamente">
+    tools:context=".ListaApartamente"
+    android:layout_margin="10dp">
 
     <ListView
         android:id="@+id/apartamenteLV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"/>
 </LinearLayout>

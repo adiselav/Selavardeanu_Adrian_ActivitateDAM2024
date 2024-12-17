@@ -16,6 +16,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.room.Room;
 
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -44,6 +48,7 @@ public class AdaugareApartament extends AppCompatActivity {
             CheckBox balconCB = findViewById(R.id.CheckBalcon);
 
             assert apartament != null;
+
             adresaET.setText(apartament.getAdresa());
             camereET.setText(String.valueOf(apartament.getNrCamere()));
             anET.setText(String.valueOf(apartament.getAnConstructie()));
@@ -72,6 +77,19 @@ public class AdaugareApartament extends AppCompatActivity {
                 executor.execute(new Runnable() {
                     @Override
                     public void run() {
+                        try {
+                            FileOutputStream fs = openFileOutput("apartamente.txt", MODE_PRIVATE);
+                            OutputStreamWriter out = new OutputStreamWriter(fs);
+                            BufferedWriter writer = new BufferedWriter(out);
+                            writer.write(apartament.toString());
+
+                            writer.close();
+                            out.close();
+                            fs.close();
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+
                         database.getDaoObject().insertApartament(apartament);
                     }
                 });
