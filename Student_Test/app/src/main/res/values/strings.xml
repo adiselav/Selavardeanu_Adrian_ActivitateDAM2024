@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Student_Test</string>
+    <string name="nume">NUME: </string>
+    <string name="varsta">VARSTA: </string>
+    <string name="json">JSON: </string>
+    <string name="salvare_json">Salvare JSON</string>
+    <string name="salvare">Salvare</string>
+    <string name="incarcare">Incarcare</string>
+    <string name="fisier_json">fisier json</string>
+    <string name="name">name</string>
+    <string name="_18">18</string>
+</resources>

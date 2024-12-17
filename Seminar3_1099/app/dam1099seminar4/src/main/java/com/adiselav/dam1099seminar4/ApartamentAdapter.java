@@ -42,18 +42,23 @@ public class ApartamentAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(ctx);
         View v = inflater.inflate(resursaLayout,parent,false);
+
         TextView adresaAp=v.findViewById(R.id.adresaApartament);
         TextView camereAp=v.findViewById(R.id.camereApartament);
         TextView anAp=v.findViewById(R.id.constructieApartament);
         TextView suprafataAp=v.findViewById(R.id.suprafataApartament);
-        CheckBox balconAp=v.findViewById(R.id.balconApartament);
+//      CheckBox balconAp=v.findViewById(R.id.balconApartament);
+        TextView apBalcon=v.findViewById(R.id.apartamentBalcon);
+
         Apartament apartament = (Apartament)getItem(position);
 
         adresaAp.setText(apartament.getAdresa());
         camereAp.setText(String.valueOf(apartament.getNrCamere()));
         anAp.setText(String.valueOf(apartament.getAnConstructie()));
         suprafataAp.setText(String.valueOf(apartament.getSuprafata()));
-        balconAp.setChecked(apartament.isBalcon());
+//      balconAp.setChecked(apartament.isBalcon());
+        apBalcon.setText("Balcon: "+String.valueOf(apartament.isBalcon()));
+
         return v;
     }
 }

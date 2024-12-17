@@ -2004,6 +2004,7 @@
     <string name="city">City: </string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="da">DA</string>
+    <string name="delete">Delete</string>
     <string name="enter_the_city">Enter the city</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
