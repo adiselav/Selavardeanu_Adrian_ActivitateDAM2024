@@ -25,7 +25,7 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="text"
-        android:text="numele"
+        android:text="@string/numele"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/etVarsta"
         app:layout_constraintHorizontal_bias="0.4"
@@ -40,7 +40,7 @@
         android:layout_marginStart="54dp"
         android:ems="10"
         android:inputType="text"
-        android:text="varsta"
+        android:text="@string/varsta_student"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.231"
@@ -62,10 +62,10 @@
         app:layout_constraintVertical_bias="0.199" />
 
     <Button
-        android:id="@+id/btnJSON"
+        android:id="@+id/btnStergere"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="@string/salvare_json"
+        android:text="@string/stergere"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -88,4 +88,28 @@
         app:layout_constraintVertical_bias="0.865"
         android:autofillHints="json"
         android:hint="@string/fisier_json"/>
+
+    <Button
+        android:id="@+id/btnLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_studenti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_favorite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

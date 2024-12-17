@@ -1,5 +1,6 @@
 package com.adiselav.student_test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        Button btnStergere = findViewById(R.id.btnJSON);
+        Button btnStergere = findViewById(R.id.btnStergere);
         btnStergere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,5 +124,23 @@ public class MainActivity extends AppCompatActivity {
 
         int numar = studentDAO.nrStudenti();
         Toast.makeText(MainActivity.this, numar + " inregistrari", Toast.LENGTH_SHORT).show();
+
+        Button btnLista = findViewById(R.id.btnLista);
+        btnLista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(getApplicationContext(), ListaStudenti.class);
+                startActivity(it);
+            }
+        });
+
+        Button btnListaFav = findViewById(R.id.btnFavorite);
+        btnListaFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(getApplicationContext(), ListaStudentiFavoriti.class);
+                startActivity(it);
+            }
+        });
     }
 }
