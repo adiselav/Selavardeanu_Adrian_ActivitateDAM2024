@@ -25,6 +25,9 @@ id buttonListaImagini
 id buttonWeather
 id camereApartament
 id constructieApartament
+id firebaseBtn
+id firebaseCB
+id firebaseLV
 id imagineIV
 id imagini
 id main
@@ -51,7 +54,13 @@ string da
 string delete
 string enter_the_city
 string favorite
+string firebase
 string formular_adaugare_apartament
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_world
 string introduceti_adresa
 string introduceti_anul_de_constructie
@@ -60,7 +69,9 @@ string introduceti_suprafata
 string lista_completa_apartamente
 string lista_imagini
 string nr_camere
+string project_id
 string suprafata
+string testare_firebase
 string textul_butonului
 style Base.Theme.Seminar3_1099
 style Theme.Seminar3_1099

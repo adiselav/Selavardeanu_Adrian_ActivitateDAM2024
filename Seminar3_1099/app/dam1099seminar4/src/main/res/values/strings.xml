@@ -21,4 +21,6 @@
     <string name="city">City: </string>
     <string name="favorite">Favorite</string>
     <string name="delete">Delete</string>
+    <string name="testare_firebase">Testare Firebase</string>
+    <string name="firebase">Firebase</string>
 </resources>

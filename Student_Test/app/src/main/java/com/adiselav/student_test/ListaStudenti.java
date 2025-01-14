@@ -70,7 +70,7 @@ public class ListaStudenti extends AppCompatActivity {
                 SharedPreferences sp = getSharedPreferences("obiecteFavorite", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putString(String.valueOf(studenti.get(i).getId()), studenti.get(i).toString());
-                editor.commit();
+                editor.apply();
                 return false;
             }
         });

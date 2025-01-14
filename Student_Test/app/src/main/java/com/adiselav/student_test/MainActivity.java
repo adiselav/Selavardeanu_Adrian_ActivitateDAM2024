@@ -30,13 +30,11 @@ import java.util.concurrent.Executors;
 import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText etNume;
     EditText etVarsta;
     EditText etJSON;
     StudentDatabase database = null;
     List<Student> studenti = null;
-
     StudentDAO studentDAO;
     String rezultat = "";
 
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         etVarsta = findViewById(R.id.etVarsta);
         etJSON = findViewById(R.id.ETjson);
 
-       studentDAO = database.getInstance(getApplicationContext()).getStudentiDao();
+       studentDAO = StudentDatabase.getInstance(getApplicationContext()).getStudentiDao();
 
         Button btnSalvare = findViewById(R.id.btnSALVARE);
         btnSalvare.setOnClickListener(new View.OnClickListener() {
@@ -85,15 +83,14 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         try{
                             URL url = new URL("https://pdm.ase.ro/curse.json");
-                            HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
-                            BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+                            HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
+                            BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
                             String linie = "";
-                            StringBuilder builder = new StringBuilder();
+                            StringBuilder sb = new StringBuilder();
                             while((linie = reader.readLine())!=null){
-                                builder.append(linie);
+                                sb.append(linie);
                             }
-
-                            JSONObject obj = new JSONObject(builder.toString());
+                            JSONObject obj = new JSONObject(sb.toString());
                             JSONArray studenti = obj.getJSONArray("curse");
                             for(int i = 0; i < studenti.length(); i++){
                                 JSONObject studentJSON = studenti.getJSONObject(i);

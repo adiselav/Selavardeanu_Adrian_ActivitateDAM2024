@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tramvai</string>
+    <string name="introduceti_modelul">Introduceti model</string>
+    <string name="model_tramvai">Model Tramvai: </string>
+    <string name="android_studio_ladybug_tramvai">Android Studio LadyBug Tramvai App</string>
+    <string name="creaza_tramvai">Creaza Tramvai</string>
+</resources>

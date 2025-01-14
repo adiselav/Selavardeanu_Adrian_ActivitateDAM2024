@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.adiselav.dam1099seminar4-mergeDebugResources-2:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.adiselav.dam1099seminar4-mergeDebugResources-3:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\adise\\.gradle\\caches\\8.9\\transforms\\3fb7ffe43ad60bf8f2db58e38fd50506\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\adise\\.gradle\\caches\\8.9\\transforms\\be19f710f38d311eae2e6d1b51171051\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
