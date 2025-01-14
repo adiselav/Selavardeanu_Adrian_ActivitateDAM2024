@@ -1,15 +1,20 @@
+# Default ignored files
+# Ignore Android Studio local configuration
 *.iml
+.cxx
+.DS_Store
+.externalNativeBuild
 .gradle
-/local.properties
+/.idea/assetWizardSettings.xml
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
-/.idea/workspace.xml
 /.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
+/.idea/workspace.xml
 /build
 /captures
-.externalNativeBuild
-.cxx
+/local.properties
+/shelf/
+/workspace.xml
 local.properties
+tall git-filter-repo
