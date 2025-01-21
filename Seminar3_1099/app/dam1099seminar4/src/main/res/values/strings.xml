@@ -23,4 +23,6 @@
     <string name="delete">Delete</string>
     <string name="testare_firebase">Testare Firebase</string>
     <string name="firebase">Firebase</string>
+    <string name="desenare">Desenare</string>
+    <string name="vizualizare_date_firebase">Vizualizare Date Firebase</string>
 </resources>

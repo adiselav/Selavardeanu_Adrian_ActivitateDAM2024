@@ -125,6 +125,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button butonDesenare = findViewById(R.id.buttonDesenare);
+        butonDesenare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DesenareActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Button butonFirebaseLV = findViewById(R.id.firebaseLV);
         butonFirebaseLV.setOnClickListener(new View.OnClickListener() {
             @Override

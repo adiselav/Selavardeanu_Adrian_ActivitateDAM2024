@@ -81,17 +81,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/firebaseLV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vizualizare Date Firebase"
+        android:text="@string/vizualizare_date_firebase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/buttonDesenare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desenare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
