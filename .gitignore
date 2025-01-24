@@ -7,3 +7,4 @@ Seminar1_1099/app/build/intermediates/incremental/debug/mergeDebugResources/merg
 config/*.json
 secrets/
 /build
+replace.txt
