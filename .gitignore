@@ -3,3 +3,7 @@ Seminar3_1099\app\dam1099seminar4\build\generated\res\processDebugGoogleServices
 Seminar3_1099\app\dam1099seminar4\build\generated\res\processDebugGoogleServices\values\values.xml
 Exemplu/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml
 Seminar1_1099/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml
+.env
+config/*.json
+secrets/
+/build

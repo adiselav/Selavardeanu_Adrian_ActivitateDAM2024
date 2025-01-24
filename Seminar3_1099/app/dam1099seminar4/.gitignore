@@ -1,3 +1,7 @@
+.env
+config/*.json
+secrets/
+/build
 /build
 Seminar3_1099\app\dam1099seminar4\build\generated\res\processDebugGoogleServices\values\values.xml
 Seminar3_1099/local.properties
