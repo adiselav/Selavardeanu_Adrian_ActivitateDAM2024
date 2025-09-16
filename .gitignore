@@ -8,3 +8,6 @@ config/*.json
 secrets/
 /build
 replace.txt
+# Android build outputs
+**/build/
+**/intermediates/
