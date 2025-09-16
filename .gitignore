@@ -8,6 +8,13 @@ config/*.json
 secrets/
 /build
 replace.txt
+<<<<<<< Updated upstream
 # Android build outputs
 **/build/
 **/intermediates/
+=======
+build
+/build
+../build
+build
+>>>>>>> Stashed changes

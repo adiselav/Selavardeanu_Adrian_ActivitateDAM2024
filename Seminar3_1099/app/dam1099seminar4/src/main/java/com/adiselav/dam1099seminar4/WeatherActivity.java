@@ -49,8 +49,8 @@ public class WeatherActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText orasET = findViewById(R.id.EditOras);
 
-                String apiKey = BuildConfig.API_KEY;
-                String link = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+apiKey+"&q="+orasET.getText().toString();
+                //String apiKey = BuildConfig.API_KEY;
+                //String link = "http://dataservice.accuweather.com/locations/v1/cities/search?apikey="+apiKey+"&q="+orasET.getText().toString();
 
                 Executor executor = Executors.newSingleThreadExecutor();
                 Handler handler = new Handler(Looper.myLooper());
@@ -61,7 +61,7 @@ public class WeatherActivity extends AppCompatActivity {
                         HttpURLConnection connection = null;
                         URL url = null;
                         try {
-                            url = new URL(link);
+                            //url = new URL(link);
                             connection = (HttpURLConnection) url.openConnection();
                             InputStream is = connection.getInputStream();
                             InputStreamReader isr = new InputStreamReader(is);
